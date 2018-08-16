@@ -6,17 +6,44 @@
     <link href="./css/style.css" type="text/css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Libre+Barcode+128+Text|Monoton" rel="stylesheet">
 </head>
 <body> 
     <div class="content">
         <div class="group">
             <div class="header" >petux</div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="footer" >add card...</div>
+            <div class="card">
+                <div class="progress-bar">
+                    <progress value="60" max="100"></progress>
+                </div>
+                <div class="title">
+                   <p>Title 1</p>
+                   
+                    
+                </div>
+                <div class="button">
+                    <button class="more">
+                        <i class="material-icons">more_horiz</i>
+                    </button>
+                    <div class="circle"></div>
+                    <script language="javascript" type="text/javascript">
+                        var d = new Date();
+                        
+                        // var day=new Array("Sun", "Mon", "Tue",
+                        // "Wed", "Thu", "Fri", "Sat");
+                        
+                        // var month=new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                        // "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+                        
+                        document.write(d.toDateString());
+                        //--></script>
+                    <img class="img" src="images/img.jpg" >
+                </div>
+            </div>
+          
+            <div class="footer" onclick="addCard()" >add card...</div>
         </div>
 
     </div>

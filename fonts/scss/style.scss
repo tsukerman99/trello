@@ -1,0 +1,101 @@
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v40/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+      background:pink;
+  }
+  .content{
+      display: flex;
+  }
+  .group{
+      display:flex;
+      margin: 10px;
+      flex-direction: column;
+      background: #e9e9eb;
+  }
+  .group .card{
+      margin: 10px;
+      background: white;
+      width: 300px;
+      height: 150px;
+  }
+  .group .header{
+      
+  font-family: 'Libre Barcode 128 Text', cursive;
+      font-size: 35px;
+      margin: 5px 10px;
+  }
+  
+  .group .footer{
+      font-family: 'Monoton', cursive;
+      font-size: 20px;
+      opacity: 0.5;
+  }
+  
+  .progress-bar {
+      background-color: #f3f3f3;
+      border: none;
+      height: 10px;
+      border-radius: 5px;
+      padding: 5px;
+      color: purple;
+      display: inline-block;
+      width: 80%;
+      margin: 10px 5px 5px 10px;
+    }
+  
+  
+  
+  .circle {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: green;
+    width: 15px;
+    height: 15px;
+  
+  }
+  
+  .img {
+    display: flex;
+    height: 60px;
+    width: 40px;
+  }
+  .button {
+  
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+  
+  }
+  
+  .more {
+    display: flex;
+    margin:0 auto;
+    padding: 0;
+    border: 0;
+    background: none;
+    height: 15px;
+    width: 15px;
+  }
