@@ -8,42 +8,40 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Libre+Barcode+128+Text|Monoton" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
 </head>
 <body> 
     <div class="content">
+        
         <div class="group">
-            <div class="header" >petux</div>
-            <div class="card">
+            <div class="header" >Title
+            
+            </div>
+            <div class="card" id="card">
                 <div class="progress-bar">
                     <progress value="60" max="100"></progress>
+                    <i id="clear" class="material-icons">clear</i>
                 </div>
                 <div class="title">
-                   <p>Title 1</p>
-                   
-                    
+                   <p>Title 1</p>  
                 </div>
                 <div class="button">
                     <button class="more">
                         <i class="material-icons">more_horiz</i>
                     </button>
                     <div class="circle"></div>
-                    <script language="javascript" type="text/javascript">
+                    <script class="date" language="javascript" type="text/javascript">
                         var d = new Date();
-                        
-                        // var day=new Array("Sun", "Mon", "Tue",
-                        // "Wed", "Thu", "Fri", "Sat");
-                        
-                        // var month=new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                        // "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
-                        
                         document.write(d.toDateString());
-                        //--></script>
+                    </script>
                     <img class="img" src="images/img.jpg" >
                 </div>
             </div>
           
-            <div class="footer" onclick="addCard()" >add card...</div>
+            <div class="footer" onclick="addCard()" > <i class="material-icons">add</i>
+                add card...
+            </div>
         </div>
 
     </div>
