@@ -5,12 +5,13 @@
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/materialicons/v40/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
   }
-  
+  .kukarachi {
+    font-size: 36px !important;
+  }
   .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;
     line-height: 1;
     letter-spacing: normal;
     text-transform: none;
@@ -31,29 +32,29 @@
   .content{
       display: flex;
   }
-  .group{
+  .group, .group-2{
       display:flex;
       margin: 10px;
       flex-direction: column;
-      background: #EFBB62;
+      background: #EFBA75;
       opacity: 0.9;
       border-radius: 7px;
   }
-  .group .card{
+  .card{
       margin: 10px;
       
 
       width: 300px;
       height: 130px;
   }
-  .group .header{
+.header{
       
     font-family: 'Amatic SC', cursive;
       font-size: 35px;
       margin: 5px 10px;
   }
   
-  .group .footer{
+ .footer{
     font-family: 'Amatic SC', cursive;
       font-size: 30px;
       opacity: 0.8;
@@ -137,3 +138,28 @@ progress::-webkit-progress-value {
  #clear {
     margin: -4px;
  }
+ 
+ .footer {
+  cursor: pointer
+}
+ .addBlock {
+   display: flex;
+   flex-direction: row;
+ }
+
+.add_circle {
+  font-size: 30px;
+}
+
+.mainHeader {
+  background-color: #EFBA75;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.9;
+}
+.imgLogo {
+  height:30px;
+  width: 80px;
+}

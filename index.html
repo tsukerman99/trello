@@ -11,10 +11,25 @@
       <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet">
 </head>
-<body> 
+<body> <div class="page">
+    <header class="mainHeader">
+            <div class="boards">
+                <button class="boardsLogo"></button>
+                <input type="search">
+            </div>
+            <div class="logo">
+                <img class="imgLogo" src="images/trello-logo-blue.png" alt="">
+            </div>
+            <div class="icons">
+                <div class="user"></div>
+                <i class="material-icons">info</i>
+                <i class="material-icons">notifications_active</i>
+                <i class="material-icons">settings</i>
+            </div>
+        </header> 
     <div class="content">
         
-        <div class="group">
+        <div class="group"  ondrop="cardDrop(event)" id="0" ondragover="onDragOver(event)">
             <div class="header" >Title
             
             </div>
@@ -39,12 +54,57 @@
                 </div>
             </div>
           
-            <div class="footer" onclick="addCard()" > <i class="material-icons">add</i>
+            <div class="footer" onclick="addCard('group')" > <i class="material-icons">add</i>
                 add card...
             </div>
+            
+        
+        
+        
         </div>
+         <div class="addBlock"> 
+           
+            <i  class="kukarachi material-icons">add_circle</i>
+        
+        </div>
+        <div class="group-2">
+            <div class="header" >Title
+            
+            </div>
+            <div class="card" id="card">
+                <div class="progress-bar">
+                    <progress value="60" max="100"></progress>
+                    <i id="clear" class="material-icons">clear</i>
+                </div>
+                <div class="title">
+                   <p>Title 1</p>  
+                </div>
+                <div class="button">
+                    <button class="more">
+                        <i class="material-icons">more_horiz</i>
+                    </button>
+                    <div class="circle"></div>
+                    <script class="date" language="javascript" type="text/javascript">
+                        var d = new Date();
+                        document.write(d.toDateString());
+                    </script>
+                    <img class="img" src="images/img.jpg" >
+                </div>
+            </div>
+          
+            <div class="footer" onclick="addCard('group-2')" > <i class="material-icons">add</i>
+                add card...
+            </div>
+            
 
+        
     </div>
+</div>
     <script src="script.js"></script>
+    <script>
+        function onDragOver(event) {
+            event.preventDefault();
+        }
+    </script>
 </body>
 </html>
