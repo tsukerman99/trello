@@ -2,6 +2,7 @@
 	var group = document.getElementsByClassName('group')[0];
 
 	window.addCard = function (classTitle) {
+		
 		group = document.getElementsByClassName(classTitle)[0];
 		var defaultCard = document.createElement('div');
 		defaultCard.className = 'card';
@@ -38,4 +39,32 @@
 			group.removeChild(element);
 		};
 	};
+	function getFile() {
+
+		var xhr = new XMLHttpRequest();
+			
+		xhr.open('GET', 'data.json', true);
+		xhr.send();
+
+			
+		xhr.onreadystatechange = function() { // (3)
+			if (xhr.readyState != 4){
+				return;
+			}
+			if (xhr.status ===0) {
+				console.log (xhr.response);
+			} else {
+				console.error (xhr);
+			}
+		};
+	}
+	function init(){
+		getFile(function(error, response){
+			if (error) {
+				return;
+			}
+			console.log(JSON.parse(response));
+		});
+	}
+	init();
 })();
