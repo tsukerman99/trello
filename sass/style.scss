@@ -28,9 +28,12 @@
     linear-gradient(-45deg, transparent 2px, #D1C7BF 2px, transparent 3px), 
     linear-gradient(45deg, transparent 2px, #D1C7BF 2px, transparent 3px);
     background-size: 6px 6px;
+    margin: 0;
   }
   .content{
-      display: flex;
+    width: 100%;
+    overflow: auto;
+    height: calc(100vh - 70px);
   }
   .group, .group-2{
       display:flex;
@@ -39,6 +42,7 @@
       background: #EFBA75;
       opacity: 0.9;
       border-radius: 7px;
+     
   }
   .card{
       margin: 10px;
@@ -48,10 +52,10 @@
       height: 130px;
   }
 .header{
-      
     font-family: 'Amatic SC', cursive;
-      font-size: 35px;
-      margin: 5px 10px;
+    font-size: 35px;
+    margin: 5px 10px;
+    padding: 10px;
   }
   
  .footer{
@@ -106,7 +110,7 @@ progress::-webkit-progress-value {
   .img {
     display: flex;
     height: 60px;
-    width: 40px;
+    width: 50px;
   }
   .button {
   
@@ -162,4 +166,63 @@ progress::-webkit-progress-value {
 .imgLogo {
   height:30px;
   width: 80px;
+}
+.page{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+}
+.conteiner{
+  display: flex;
+  align-items: flex-start;
+}
+
+.addBlock{
+
+}
+.add-group-description{
+  display: none;
+}
+.add-group-button{
+  background: none;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 18px;
+}
+.add-group-description{
+
+  display: none;
+}
+.add-block-edit .add-group-button{
+  display: none;
+}
+.add-block-edit .add-group-description{
+  display: block;
+}
+.add-group-description input[type=text]{
+  width: 100%;
+  background: #EFBA75;
+  padding: 10px;
+  border:2px solid #ba7448;
+  border-radius: 8px;
+  outline: none;
+  display: block;
+  margin: 0 0 10px;
+}
+
+
+.modal{
+  position: absolute;
+  top:-35%;
+  left: 15%;
+  height: 30%;
+  width: 70%;
+  background: white;
+  margin: auto;
+}
+
+.changes{
+  
 }
